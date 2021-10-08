@@ -1,0 +1,90 @@
+.targets {
+    margin-top: 100px;
+    &__img {
+        position: relative;
+        .wrapper-wrapper {
+            filter: drop-shadow(3px 0px 0px #0022ea);
+        }
+        &_boy {
+            position: absolute;
+            top: -100px;
+            right: -106px;
+            img {
+                width: 251px;
+                height: auto;
+            }
+        }
+        &_girl {
+            position: absolute;
+            top: -70px;
+            left: -100px;
+            img {
+                width: 181px;
+                height: auto;
+            }
+        }
+        &_figure {
+            position: absolute;
+            top: -100px;
+            right: -85px;
+            z-index: -1;
+        }
+        &_info {
+            position: absolute;
+            top: -40px;
+            left: 105px;
+            z-index: 100;
+            width: 295px;
+            height: 63px;
+            background: #FF5B00;
+            box-shadow: 3px 3px 0px #0022EA;
+            font-family: 'Montserrat',sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            padding-top: 17px;
+            box-sizing: border-box;
+            clip-path: polygon(0% 0%, 104% 0%, 110% 110%, 1% 110%);
+        }
+    }
+    &__wrapper {
+        height: 184px;
+        width: 1050px;
+        margin: 0 auto;
+        background: #FFF800;
+        box-shadow: 3px 3px 0px #0022EA;
+        padding-top: 55px;
+        position: relative;
+        clip-path: polygon(3% -30%, 97% 0%, 100% 103%, 0% 160%);
+        box-sizing: border-box;
+        
+        &_reasons {
+            max-width: 980px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            &_item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                img {
+                    margin-right: 10px;
+                }
+                div {
+                    font-family: 'Montserrat',sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    color: #0022EA;
+                    margin-right: 10px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
